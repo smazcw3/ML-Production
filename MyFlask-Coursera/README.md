@@ -5,7 +5,7 @@
 
 + `Amazon Elastic Compute Cloud (Amazon EC2)` provides secure, resizable compute capacity in the cloud whereas `AWS Elastic Beanstalk` is an easy-to-use service for deploying and scaling web applications into AWS cloud servers.
 
-+ AWS Elastic Beanstalk Management Console provides a service to set up a Database under the **additional configuration**.
++ AWS Elastic Beanstalk Management Console provides a service to set up a Database under the *additional configuration*.
 
 + `Postman` is an API (application programming interface) development tool which helps to build, test and modify APIs. Almost any functionality that could be needed by any developer is encapsulated in this tool. It has the ability to make various types of HTTP requests (GET, POST, PUT, PATCH), saving environments for later use, converting the API to code for various languages (like JavaScript, Python).
 
@@ -21,7 +21,7 @@
 
 **Task 6: Deploy your ML model(API) into AWS virtual servers** -- In this task, we will deploy spam detection API flask application into AWS EC2 instance.  For this, we need to make sure that AWS server correctly resolves project based dependencies such as "Flask", "scikit-learn" etc. into into cloud servers. This is achieved by writing a "requirements.txt" file. This file lists all project based dependencies so that AWS Elastic Beanstalk will install project based dependencies or libraries by looking into this file.
 
-Within exiting the virtual environment created in **Task 1** write in terminal : `pip3 freeze > requirements.txt`. Here `Freeze` is a command that allows you to see what modules along with the versions you have installed with the pip command. When you deploy *requirements.txt* along with your codebase into the AWS, it informs the server all those dependencies on to its cloud servers. Technically, AWS will install all dependencies automatically rather than you deploying it manually.
+Within exiting the virtual environment created in **Task 1** write in terminal : `pip3 freeze > requirements.txt`. Here `freeze` is a command that allows you to see what modules along with the versions you have installed with the pip command. When you deploy *requirements.txt* along with your codebase into the AWS, it informs the server all those dependencies on to its cloud servers. Technically, AWS will install all dependencies automatically rather than you deploying it manually.
 
 > **_NOTE:_**   Flask object name and application name has to match before deploying to AWS.
 
